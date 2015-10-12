@@ -1,0 +1,82 @@
+Code,Drug,Disease,Targets
+DB00268,Ropinirole,Parkinson’s,D(2) dopamine receptor
+DB00268,Ropinirole,Parkinson’s,D(3) dopamine receptor
+DB00268,Ropinirole,Parkinson’s,5-hydroxytryptamine receptor 1A
+DB00268,Ropinirole,Parkinson’s,5-hydroxytryptamine receptor 1D
+DB00268,Ropinirole,Parkinson’s,5-hydroxytryptamine receptor 2B
+DB00268,Ropinirole,Parkinson’s,D(1A) dopamine receptor
+DB00268,Ropinirole,Parkinson’s,D(1B) dopamine receptor
+DB00268,Ropinirole,Parkinson’s,5-hydroxytryptamine receptor 1B
+DB00268,Ropinirole,Parkinson’s,5-hydroxytryptamine receptor 2A
+DB00268,Ropinirole,Parkinson’s,5-hydroxytryptamine receptor 2C
+DB00268,Ropinirole,Parkinson’s,Alpha-2A adrenergic receptor
+DB00268,Ropinirole,Parkinson’s,Alpha-2B adrenergic receptor
+DB00268,Ropinirole,Parkinson’s,Alpha-2C adrenergic receptor
+DB00268,Ropinirole,Parkinson’s,Cytochrome P450 1A2
+DB00193,Tramadol,analgesic,Sodium-dependent noradrenaline transporter
+DB00193,Tramadol,analgesic,Sodium-dependent serotonin transporter
+DB00193,Tramadol,analgesic,5-hydroxytryptamine receptor 2C
+DB00193,Tramadol,analgesic,Kappa-type opioid receptor
+DB00193,Tramadol,analgesic,Delta-type opioid receptor
+DB00193,Tramadol,analgesic,"Glutamate receptor ionotropic, NMDA 3A"
+DB00193,Tramadol,analgesic,Alpha-7 nicotinic cholinergic receptor subunit
+DB00193,Tramadol,analgesic,Muscarinic acetylcholine receptor M3
+DB00715,Paroxetine,antidepressant,Sodium-dependent noradrenaline transporter
+DB00715,Paroxetine,antidepressant,5-hydroxytryptamine receptor 2A
+DB00715,Paroxetine,antidepressant,Muscarinic acetylcholine receptor M1
+DB00715,Paroxetine,antidepressant,Muscarinic acetylcholine receptor M2
+DB00715,Paroxetine,antidepressant,Muscarinic acetylcholine receptor M3
+DB00715,Paroxetine,antidepressant,Muscarinic acetylcholine receptor M4
+DB00715,Paroxetine,antidepressant,Muscarinic acetylcholine receptor M5
+DB0123,Aripiprazole,schizophrenia,5-hydroxytryptamine receptor 2A
+DB0123,Aripiprazole,schizophrenia,D(2) dopamine receptor
+DB0123,Aripiprazole,schizophrenia,5-hydroxytryptamine receptor 1A
+DB0123,Aripiprazole,schizophrenia,5-hydroxytryptamine receptor 1B
+DB0123,Aripiprazole,schizophrenia,5-hydroxytryptamine receptor 1D
+DB0123,Aripiprazole,schizophrenia,5-hydroxytryptamine receptor 1E
+DB0123,Aripiprazole,schizophrenia,5-hydroxytryptamine receptor 2C
+DB0123,Aripiprazole,schizophrenia,5-hydroxytryptamine receptor 3A
+DB0123,Aripiprazole,schizophrenia,5-hydroxytryptamine receptor 6
+DB0123,Aripiprazole,schizophrenia,5-hydroxytryptamine receptor 7
+DB0123,Aripiprazole,schizophrenia,D(1A) dopamine receptor
+DB0123,Aripiprazole,schizophrenia,D(1B) dopamine receptor
+DB0123,Aripiprazole,schizophrenia,D(3) dopamine receptor
+DB0123,Aripiprazole,schizophrenia,D(4) dopamine receptor
+DB0123,Aripiprazole,schizophrenia,Histamine H1 receptor
+DB0123,Aripiprazole,schizophrenia,Alpha-1A adrenergic receptor
+DB0123,Aripiprazole,schizophrenia,Alpha-1B adrenergic receptor
+DB0123,Aripiprazole,schizophrenia,Alpha-2A adrenergic receptor
+DB0123,Aripiprazole,schizophrenia,Alpha-2B adrenergic receptor
+DB0123,Aripiprazole,schizophrenia,Alpha-2C adrenergic receptor
+DB0123,Aripiprazole,schizophrenia,Muscarinic acetylcholine receptor M1
+DB0123,Aripiprazole,schizophrenia,Muscarinic acetylcholine receptor M2
+DB0123,Aripiprazole,schizophrenia,Muscarinic acetylcholine receptor M3
+DB0123,Aripiprazole,schizophrenia,Muscarinic acetylcholine receptor M4
+DB0123,Aripiprazole,schizophrenia,Muscarinic acetylcholine receptor M5
+DB00334,Olanzapine,antipsychotic,5-hydroxytryptamine receptor 2A
+DB00334,Olanzapine,antipsychotic,D(2) dopamine receptor
+DB00334,Olanzapine,antipsychotic,D(1A) dopamine receptor
+DB00334,Olanzapine,antipsychotic,D(1B) dopamine receptor
+DB00334,Olanzapine,antipsychotic,D(3) dopamine receptor
+DB00334,Olanzapine,antipsychotic,5-hydroxytryptamine receptor 1A
+DB00334,Olanzapine,antipsychotic,5-hydroxytryptamine receptor 1B
+DB00334,Olanzapine,antipsychotic,5-hydroxytryptamine receptor 1D
+DB00334,Olanzapine,antipsychotic,5-hydroxytryptamine receptor 1E
+DB00334,Olanzapine,antipsychotic,5-hydroxytryptamine receptor 2C
+DB00334,Olanzapine,antipsychotic,5-hydroxytryptamine receptor 3A
+DB00334,Olanzapine,antipsychotic,5-hydroxytryptamine receptor 6
+DB00334,Olanzapine,antipsychotic,5-hydroxytryptamine receptor 7
+DB00334,Olanzapine,antipsychotic,Histamine H1 receptor
+DB00334,Olanzapine,antipsychotic,Alpha-1A adrenergic receptor
+DB00334,Olanzapine,antipsychotic,Alpha-1B adrenergic receptor
+DB00334,Olanzapine,antipsychotic,Alpha-2A adrenergic receptor
+DB00334,Olanzapine,antipsychotic,Alpha-2B adrenergic receptor
+DB00334,Olanzapine,antipsychotic,Alpha-2C adrenergic receptor
+DB00334,Olanzapine,antipsychotic,Muscarinic acetylcholine receptor M1
+DB00334,Olanzapine,antipsychotic,Muscarinic acetylcholine receptor M2
+DB00334,Olanzapine,antipsychotic,Muscarinic acetylcholine receptor M3
+DB00334,Olanzapine,antipsychotic,Muscarinic acetylcholine receptor M4
+DB00334,Olanzapine,antipsychotic,Muscarinic acetylcholine receptor M5
+DB00334,Olanzapine,antipsychotic,5-hydroxytryptamine receptor 2B
+DB00334,Olanzapine,antipsychotic,D(1A) dopamine receptor
+DB00334,Olanzapine,antipsychotic,Histamine H2 receptor
