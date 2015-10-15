@@ -23,6 +23,7 @@ library(bioassayR)
 library(clusterProfiler)
 library(mygene)
 library(DOSE)
+library(igraph)
 
 # load in the STITCH data, proteins linked to Alzheimers and their numerous interactions
 plist <- c('APP','PSEN1','PSEN2','APOE','BACE1') 
@@ -44,19 +45,19 @@ total <- rbind(PSEN1,PSEN2,APOE,APP,BACE1)
 total <- unique(total)
 
 # SIDER2 data (side-effects)
-db_maps   <- file.path('C://R-files//drugbank', 'label_mapping.tsv.gz') %>% read.delim(na.strings='',header = FALSE) 
+#db_maps   <- file.path('C://R-files//drugbank', 'label_mapping.tsv.gz') %>% read.delim(na.strings='',header = FALSE) 
 db_med_effects  <- file.path('C://R-files//drugbank', 'meddra_adverse_effects.tsv.gz') %>% read.delim(na.strings='',header = FALSE) 
-db_adverse_effects <- file.path('C://R-files//drugbank', 'adverse_effects_raw.tsv.gz') %>% read.delim(na.strings='',header = FALSE) 
-db_indications <- file.path('C://R-files//drugbank', 'indications_raw.tsv.gz') %>% read.delim(na.strings='',header = FALSE) 
-db_fp      <- file.path('C://R-files//drugbank', 'meddra_freq_parsed.tsv.gz') %>% read.delim(na.strings='',header = FALSE) 
+#db_adverse_effects <- file.path('C://R-files//drugbank', 'adverse_effects_raw.tsv.gz') %>% read.delim(na.strings='',header = FALSE) 
+#db_indications <- file.path('C://R-files//drugbank', 'indications_raw.tsv.gz') %>% read.delim(na.strings='',header = FALSE) 
+#db_fp      <- file.path('C://R-files//drugbank', 'meddra_freq_parsed.tsv.gz') %>% read.delim(na.strings='',header = FALSE) 
 
 # load in data from the PharmGKB website
-GKB_offsides <- file.path('C://R-files//himmelstein', 'offsides.tsv') %>% read.delim(na.strings='')
-GKB_drug2drug <- file.path('C://R-files//himmelstein', 'twosides.tsv') %>% read.delim(na.strings='')
-GKB_boxwarn <- file.path('C://R-files//himmelstein', 'box_warnings.tsv') %>% read.delim(na.strings='')
+#GKB_offsides <- file.path('C://R-files//himmelstein', 'offsides.tsv') %>% read.delim(na.strings='')
+#GKB_drug2drug <- file.path('C://R-files//himmelstein', 'twosides.tsv') %>% read.delim(na.strings='')
+#GKB_boxwarn <- file.path('C://R-files//himmelstein', 'box_warnings.tsv') %>% read.delim(na.strings='')
 
 # clean up unneeded variables
-rm(APOE,APP,BACE1,PSEN1,PSEN2)
+#rm(APOE,APP,BACE1,PSEN1,PSEN2)
 
 #newdata <- sider.df[order(sider.df$pubchem_cid),]  # SORT DATA BY 
 
@@ -123,8 +124,6 @@ rm(GroupA,GroupB,GroupC,universe)
 #--------- Now determine which drugs have similar side effects to our universe of side-effects -----
 # But how many SE's would be deemed 'enough' for a drug to be classed as similar????
 
-#allSE
-
 candDrug <- db_med_effects$V5[grep('donepezil',db_med_effects$V4)]
 candSE <- db_med_effects$V5[grep('donepezil',db_med_effects$V5)]
 
@@ -133,7 +132,8 @@ candSE <- db_med_effects$V5[grep('donepezil',db_med_effects$V5)]
 
 NoDrugs <- unique(db_med_effects$V4) # We have 996 drugs
 
-Names <- letters[1:5];Dates<- 1:length(NoDrugs);#allDrugs[1,1] <- "Happy"
+Names <- letters[1:5];
+Dates<- 1:length(NoDrugs);
 allDrugs<- data.frame(drugnames=Dates, NoSideEffects = vector(mode="numeric", length=length(Dates)), coverage=vector(mode="numeric",length=length(Dates))); 
 allDrugNames <- lapply(NoDrugs, as.character)
 
@@ -146,7 +146,7 @@ for (i in 1:length(NoDrugs)){
   allDrugs[i,2] <- length(unique(TempDrug)); # side effects found for each drug
   TempDrug <- unique(TempDrug)
   coverage <- allSE[TempDrug]
-  coverage <- coverage[!is.na(coverage)] # get rid of NA
+  coverage <- coverage[!is.na(coverage)] # get rid of NA when we dont get a matching side-effect
   coverage <- (length(coverage)/length(allSE))*100; # percentage coverage of joint SE of three alzheiemers drugs
 
   allDrugs[i,3] <- coverage
