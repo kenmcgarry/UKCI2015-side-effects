@@ -35,3 +35,9 @@ new uses for existing drugs. Nature Reviews Drug Discovery,3:673–683, 2004.
 > L. Brouwers, M. Iskar, G. Zeller, V. vanNoort, , and P. Bork. Network
 neighbors of drug targets contribute to drug side-effect similarity. PLoS
 ONE, 6(7):e22187, 07 2011.
+
+> M. Campillos, M. Khun, A. Gavin, L. Jensen, and P. Bork. Drug target
+identification using side-effect similarity. Science, 321:263–266, 2008.
+
+> A. Chiang and A. Butte. Systematic evaluation of drug-disease relationships
+to identity leads for novel drug uses. Clinical pharmacology and therapeutics, 86(5):507–510, 2009.
