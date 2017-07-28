@@ -25,6 +25,13 @@ benefit from this re-deployment. The system uses graph based
 computational techniques to analyze drugs with known sideeffects
 and compares the proteins involved in these side-effects
 with proteins known to be identified with other diseases. Our
-intention is to find potential candidates for treating Alzheimer’s
+intention is to find potential candidates for treating Alzheimerâ€™s
 disease.
-Keywords—complex networks, side-effects, hubs, nearness, betweeness
+Keywordsâ€”complex networks, side-effects, hubs, nearness, betweeness
+
+> T. Ashburn and K. B. Thorl. Drug repositioning: identifying and developing
+new uses for existing drugs. Nature Reviews Drug Discovery,3:673â€“683, 2004.
+
+> L. Brouwers, M. Iskar, G. Zeller, V. vanNoort, , and P. Bork. Network
+neighbors of drug targets contribute to drug side-effect similarity. PLoS
+ONE, 6(7):e22187, 07 2011.
